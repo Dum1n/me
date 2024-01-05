@@ -1,5 +1,5 @@
 
-
+/*
 let search = document.querySelector(".search");
 
 let clear = document.querySelector(".clear");
@@ -10,7 +10,7 @@ search.onclick = function(){
 clear.onclick = function(){
       document.getElementById("search").value = "";
 }
-
+*/
 /*
 var counter = 1;
 setInterval(function(){
@@ -105,4 +105,32 @@ function switchImage(currentImage){
     slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
     }
     indicators();
+}
+/*for dropdown*/ 
+let bars = document.querySelector('.bars');
+let navbar = document.querySelector('.navbar');
+let header = document.querySelector('header');
+
+bars.onclick = function(){
+    header.classList.toggle('open');
+}
+
+/*Search bar*/
+
+let searchbtn = document.querySelector('.searchbtn');
+
+let closebtn = document.querySelector('.closebtn');
+
+let searchbox = document.querySelector('.searchbox');
+
+searchbtn.onclick = function(){
+    searchbox.classList.add('active');
+    closebtn.classList.add('active');
+    searchbtn.classList.add('active');
+}
+
+closebtn.onclick = function(){
+    searchbox.classList.remove('active');
+    closebtn.classList.remove('active');
+    searchbtn.classList.remove('active');
 }
