@@ -124,13 +124,13 @@ let closebtn = document.querySelector('.closebtn');
 let searchbox = document.querySelector('.searchbox');
 
 searchbtn.onclick = function(){
-    searchbox.classList.add('active');
-    closebtn.classList.add('active');
-    searchbtn.classList.add('active');
+    searchbox.classList.toggle('active');
+    closebtn.classList.toggle('active');
+    searchbtn.classList.toggle('active');
 }
 
 closebtn.onclick = function(){
-    searchbox.classList.remove('active');
-    closebtn.classList.remove('active');
-    searchbtn.classList.remove('active');
+    searchbox.classList.toggle('active');
+    closebtn.classList.toggle('active');
+    searchbtn.classList.toggle('active');
 }
